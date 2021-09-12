@@ -12,10 +12,11 @@ public class Main {
 		 * while(comprar) {
 		 * 
 		 * 	  Apresentacoes.inicio();
+		 *	  Apresentacoes.desenho(); 			
 		 * 
 		 * 	  if (Apresentacoes.pergunta()) {
 		 * 	 
-		 *   	  Apresentacoes.desenho();
+		 *   	  
 		 *   
 		 *   	  Menu.mostraMenu(); // Dentro do menu faz a compra e finaliza compra
 		 *   
