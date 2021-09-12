@@ -1,21 +1,22 @@
 
 public class TesteAlexa {
 
-	public static void main(String[] args) {
+	public static void main (String []args) {
 		Apresentacoes apresentacoes = new Apresentacoes();
 		
 		//apresentacoes.inicio();
 		//apresentacoes.pergunta();
+		//apresentacoes.desenho();
 		
 		Boolean comprar = true;
 		 
 		while(comprar) {
 		  
 			apresentacoes.inicio();
+			apresentacoes.desenho();
 		  
 			if (apresentacoes.pergunta()) {
 		  	 
-				//Apresentacoes.desenho();
 		    
 				//Menu.mostraMenu(); // Dentro do menu faz a compra e finaliza compra
 		    
@@ -25,13 +26,14 @@ public class TesteAlexa {
 		    
 				//comprar = FechamentoCompra.continuarCompra() // Retorna boolean
 		  
-				//Apresentacoes.fim();
+				apresentacoes.fim();
 		    
 		
 			} //else {
 				//Apresentacoes.fim();
 			//}
-		  
+
 		}
-	}
+	}		
 }
+

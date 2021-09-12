@@ -7,6 +7,34 @@ public class Apresentacoes {
 		System.out.print("----Bem vindo a Devs de int[e]=riores!----");
 		System.out.print("\n  -----Programando o seu conforto!-----\n"); 
 	}
+	
+	public void fim() {
+		System.out.print("Obrigada por comprar com a Devs de int[e]=riores!");
+	}
+	
+	public void desenho(){
+		System.out.print("\n\n         /@@@@@@@@@@@@@@@@@@@@@@@%                  |||   &@@@@@@@@@@@@@@@@@@  \n");
+		System.out.print("	 /@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.            |||   &@@@@@@@@@@@@@@@@@@  \n");
+		System.out.print("	 /@@@@@@@@&*@@@@@@@@@@@@*  @@@@@@@,         |||   &@@@@@@@@/%@@@@@@@@  \n");    
+		System.out.print("	 /@@@@@@@@&*@@@@@@@@@@@@@@@@@..@@@@@*       |||   &@@@@@@@@/%@@@@@@@@  \n"); 
+		System.out.print("	      @@@@&*@@@@         &@@@@@@ @@@@@      |||        @@@@/%@@@@      \n");   
+		System.out.print("	      @@@@&*@@@@            @@@@@ &@@@@     |||        @@@@/%@@@@      \n");   
+		System.out.print("	      @@@@&*@@@@             .@@@@ @@@@%    |||        @@@@/%@@@@      \n");  
+		System.out.print("	      @@@@&*@@@@              @@@@#(@@@@    |||        @@@@/%@@@@      \n");    
+		System.out.print("	      @@@@&*@@@@              @@@@#*@@@@    |||        @@@@/%@@@@      \n");     
+		System.out.print("	      @@@@&*@@@@              @@@@#*@@@@    |||        @@@@/%@@@@      \n");    
+		System.out.print("	      @@@@&*@@@@              @@@@#*@@@@    |||        @@@@/%@@@@      \n");    
+		System.out.print("	      @@@@&*@@@@              @@@@#*@@@@    |||        @@@@/%@@@@      \n"); 
+		System.out.print("	      @@@@&*@@@@              @@@@#*@@@@    |||        @@@@/%@@@@      \n");  
+		System.out.print("	      @@@@&*@@@@             @@@@@ @@@@     |||        @@@@/%@@@@      \n");  
+		System.out.print("	      @@@@&*@@@@           @@@@@# @@@@*     |||        @@@@/%@@@@      \n");  
+		System.out.print("         *&&&&@@@@&*@@@@&&&&&@@@@@@@@@% @@@@@       |||   %&&&&@@@@/%@@@@&&&& \n"); 
+		System.out.print("	 /@@@@@@@@&*@@@@@@@@@@@@@@@. @@@@@@*        |||   &@@@@@@@@/%@@@@@@@@  \n");      
+		System.out.print("	 /@@@@,,,,,,,,,,,,,,,,/&@@@@@@@@@           |||   &@@@@,,,,,,,,,,@@@@  \n");       
+		System.out.print("	 /@@@@@@@@@@@@@@@@@@@@@@@@@@@               |||   &@@@@@@@@@@@@@@@@@@  \n\n");    
+		
+	}
+	
 	//metodo		
 	public boolean pergunta() {
 		
