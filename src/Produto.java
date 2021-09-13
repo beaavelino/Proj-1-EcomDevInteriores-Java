@@ -5,6 +5,7 @@ public class Produto {
 	private double preco;
 	private int estoque = 10;
 	private int carrinho = 0;
+	private double somatorio = 0.0;
 
 	
 	
@@ -21,6 +22,9 @@ public class Produto {
 		this.estoque = estoque;
 	}
 
+
+
+
 	public void retornaEstoqueMenu() {
 		System.out.print(codigo);
 		espacoNome(codigo, 18);
@@ -35,6 +39,13 @@ public class Produto {
 		System.out.print(nome);
 		espacoNome(nome, 30);
 		System.out.print("         " + preco + "               " + carrinho + "\n");
+	}
+	
+	public void retornaCarrinhoNota() {
+		System.out.print(nome);
+		espacoNome(nome, 30);
+		somatorio = carrinho * preco;
+		System.out.printf("    " + carrinho + "              " + preco + "          " + "%.2f \n", somatorio);
 	}
 
 	public int getEstoque() {

@@ -52,6 +52,19 @@ public class Estoque {
 		System.out.println("");
 
 	}
+	
+	public void mostraNota() {
+		linha();
+		for (Produto produto : produtos) {
+			if (produto.getCarrinho()!=0) {
+				produto.retornaCarrinhoNota();
+			}
+			
+
+		}
+		System.out.println("");
+
+	}
 
 	public void cimaMenu() {
 		linha();
