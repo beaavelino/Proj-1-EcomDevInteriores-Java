@@ -1,11 +1,21 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class Estoque {
+
+	public Estoque() {
+		inicializaEstoque();
+	}
 
 	List<Produto> produtos = new ArrayList<>();
 
 	public void inicializaEstoque() {
+
 		produtos.add(new Produto("G5-1", "Luminaria de mesa", 119.99));
 		produtos.add(new Produto("G5-2", "Poltrona", 799.99));
 		produtos.add(new Produto("G5-3", "Abajur", 109.99));
@@ -16,17 +26,10 @@ public class Estoque {
 		produtos.add(new Produto("G5-8", "Cadeira Gamer", 999.99));
 		produtos.add(new Produto("G5-9", "Mesa de centro", 220.99));
 		produtos.add(new Produto("G5-10", "Sofá", 950.99));
-
 	}
 
 	public void mostraEstoque() {
-		inicializaEstoque();
-		linha();
-		System.out.print("Codigo");
-		Produto.espacoNome("Codigo", 18);
-		System.out.print("Produto");
-		Produto.espacoNome("Produto", 30);
-		System.out.print("         " + "Preço" + "           " + "Estoque\n");
+		cimaMenu();
 		linha();
 		for (Produto produto : produtos) {
 
@@ -34,8 +37,23 @@ public class Estoque {
 
 		}
 		System.out.println("");
+
 	}
-	public void mostraEstoque1() {
+	public void mostraCarrinho() {
+		cimaMenu();
+		linha();
+		for (Produto produto : produtos) {
+			if (produto.getCarrinho()!=0) {
+				produto.retornaCarrinhoMenu();
+			}
+			
+
+		}
+		System.out.println("");
+
+	}
+
+	public void cimaMenu() {
 		linha();
 		System.out.print("Codigo");
 		Produto.espacoNome("Codigo", 18);
@@ -43,12 +61,6 @@ public class Estoque {
 		Produto.espacoNome("Produto", 30);
 		System.out.print("         " + "Preço" + "           " + "Estoque\n");
 		linha();
-		for (Produto produto : produtos) {
-
-			produto.retornaEstoqueMenu();
-
-		}
-		System.out.println("");
 	}
 
 	public Produto consultaProduto(String codigo) {
@@ -58,10 +70,12 @@ public class Estoque {
 			}
 		}
 		return new Produto("G5-11", "codigo errado", 0, 0);
+
 	}
 
 	public void retiraEstoque(Produto produto, int quantidade) {
 		produto.tiraEstoque(quantidade);
+		produto.acrescentaCarrinho(quantidade);
 	}
 
 	public static void linha() {
@@ -84,5 +98,4 @@ public class Estoque {
  * Menu("G5-8","Cadeira Gamer", 999.99)); Menu MCentro = new
  * Menu("G5-9","Mesa de centro", 220.99)); Menu Sofa = new Menu("G5-10","Sofá",
  * 950.99));
- * 
  */

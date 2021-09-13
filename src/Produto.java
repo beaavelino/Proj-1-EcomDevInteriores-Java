@@ -5,8 +5,8 @@ public class Produto {
 	private double preco;
 	private int estoque = 10;
 	private int carrinho = 0;
+
 	
-	Estoque estoque1 = new Estoque();
 	
 	public Produto(String codigo, String nome, double preco) {
 		this.codigo = codigo;
@@ -36,9 +36,7 @@ public class Produto {
 		espacoNome(nome, 30);
 		System.out.print("         " + preco + "               " + carrinho + "\n");
 	}
-	public void inicia() {
-		estoque1.inicializaEstoque();
-	}
+
 	public int getEstoque() {
 		return this.estoque;
 	}
@@ -47,7 +45,7 @@ public class Produto {
 		this.estoque -= estoque;
 	}
 
-	public int Carrinho() {
+	public int getCarrinho() {
 		return carrinho;
 	}
 
