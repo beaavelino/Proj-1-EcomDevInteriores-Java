@@ -26,7 +26,7 @@ public class Menu {
 		System.out.print("Digite o codigo do produto desejado: ");
 		
 		Scanner scanner = new Scanner(System.in);
-		String codigo = scanner.nextLine();
+		String codigo = scanner.nextLine().toUpperCase();
 		
 		Produto produto = estoque.consultaProduto(codigo);
 		
