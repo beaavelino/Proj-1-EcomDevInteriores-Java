@@ -4,10 +4,11 @@ public class TesteAlexa {
 	public static void main (String []args) {
 		Apresentacoes apresentacoes = new Apresentacoes();
 		Menu menu = new Menu();
+<<<<<<< HEAD
+=======
 		
-		//apresentacoes.inicio();
-		//apresentacoes.pergunta();
-		//apresentacoes.desenho();
+>>>>>>> 68f1930a843f7ea0e43d4c80bd6a49be2e97a432
+		
 		
 		Boolean comprar = true;
 		
@@ -18,21 +19,30 @@ public class TesteAlexa {
 			apresentacoes.desenho();
 		  
 			if (apresentacoes.pergunta()) {
+<<<<<<< HEAD
 		    
+=======
+		  	 		    
+>>>>>>> 68f1930a843f7ea0e43d4c80bd6a49be2e97a432
 				menu.mostraMenu(); // Dentro do menu faz a compra e finaliza compra
 		    
-				//FechamentoCompra.escolhePagamento() // Trabalha com a classe TipoPagamento 
+				//fechamentoCompra.escolhePagamento() // Trabalha com a classe TipoPagamento 
 		    
-				//FechamentoCompra.imprimeNota() 
+				//fechamentoCompra.imprimeNota() 
 		    
 				//comprar = FechamentoCompra.continuarCompra() // Retorna boolean
 		  
-				apresentacoes.fim();
+				//apresentacoes.fim();
+				comprar = false;
 		    
 				comprar = false;
 		
 			} else {
+<<<<<<< HEAD
 				//Apresentacoes.fim();
+=======
+				apresentacoes.fim();
+>>>>>>> 68f1930a843f7ea0e43d4c80bd6a49be2e97a432
 				comprar = false;
 			}
 

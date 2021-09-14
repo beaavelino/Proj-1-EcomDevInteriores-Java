@@ -4,12 +4,13 @@ public class Apresentacoes {
 	private Scanner leia = new Scanner(System.in);
 
 	public void inicio() {
-		System.out.print("----Bem vindo a Devs de int[e]=riores!----");
-		System.out.print("\n  -----Programando o seu conforto!-----\n"); 
+		System.out.print("\n-----------------------Bem vindo a Devs de int[e]=riores!-----------------------");
+		System.out.print("\n----------------------------Programando o seu conforto!-------------------------\n"); 
 	}
 	
 	public void fim() {
-		System.out.print("Obrigada por comprar com a Devs de int[e]=riores!");
+		
+		System.out.print("\nA Devs de int[e]=riores agradece a sua visita!");
 	}
 	
 	public void desenho(){
@@ -38,7 +39,7 @@ public class Apresentacoes {
 	//metodo		
 	public boolean pergunta() {
 		
-		System.out.print("\nDeseja comprar algo? ");
+		System.out.print("\nDeseja comprar algo? S/N ");
 		
 		char respostaUsuario;
 		boolean respostaBoolean = false;
@@ -48,11 +49,11 @@ public class Apresentacoes {
 			
 			if (respostaUsuario == 's' || respostaUsuario == 'S') {
 			
-				System.out.print("\nIremos te apresentar nossos produtos!");
+				System.out.print("\nIremos te apresentar nossos produtos!\n");
 				respostaBoolean = true;
 			}		
 			else if (respostaUsuario == 'n' || respostaUsuario == 'N') {
-				System.out.print("\nAté logo!");
+				System.out.print("\nAté logo!\n");
 				respostaBoolean = false;
 			}
 			else {
