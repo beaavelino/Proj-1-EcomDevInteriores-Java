@@ -39,33 +39,33 @@ public class Estoque {
 		System.out.println("");
 
 	}
+
 	public void mostraCarrinho() {
 		cimaMenu();
 		linha();
 		for (Produto produto : produtos) {
-			if (produto.getCarrinho()!=0) {
+			if (produto.getCarrinho() != 0) {
 				produto.retornaCarrinhoMenu();
 			}
-			
 
 		}
 		System.out.println("");
 
 	}
 	
+
 	public void mostraNota() {
 		linha();
 		for (Produto produto : produtos) {
-			if (produto.getCarrinho()!=0) {
+			if (produto.getCarrinho() != 0) {
 				produto.retornaCarrinhoNota();
 			}
-			
 
 		}
 		System.out.println("");
 
 	}
-
+	
 	public void cimaMenu() {
 		linha();
 		System.out.print("Codigo");
@@ -91,10 +91,29 @@ public class Estoque {
 		produto.acrescentaCarrinho(quantidade);
 	}
 
+	public boolean carrinhoVazio() {
+
+		for (Produto produto : produtos) {
+			if (produto.getCarrinho() != 0) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
 	public static void linha() {
 		System.out.println("--------------------------------------------------------------------------------");
 	}
 
+	public double ValorTotal() {
+		double valorTotal = 0;
+		for (Produto produto : produtos) {
+			valorTotal += produto.getPreco() * produto.getCarrinho();
+		}
+		
+		return valorTotal;
+	}
 }
 // List<String> nomes = new ArrayList<>();
 
