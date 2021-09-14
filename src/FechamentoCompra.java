@@ -126,6 +126,6 @@ public class FechamentoCompra {
 		System.out.print("Insira o seu CPF: ");
 		cpfUsuario = scanner.nextLine();
 		
-		scanner.close();
+		//scanner.close();
 	}
 }
