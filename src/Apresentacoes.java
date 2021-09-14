@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Apresentacoes {
 	private Scanner leia = new Scanner(System.in);
 
-	public void inicio() {
+	public static void inicio() {
 		System.out.print("\n-----------------------Bem vindo a Devs de int[e]=riores!-----------------------");
 		System.out.print("\n----------------------------Programando o seu conforto!-------------------------\n"); 
 	}

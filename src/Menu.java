@@ -9,14 +9,9 @@ public class Menu {
 		this.estoque = estoque;
 	}
 	
-	//Estoque estoque = new Estoque();
-	Apresentacoes apresentacoes = new Apresentacoes();
-	
 	public void mostraMenu() {
 		
-		System.out.println("ok");
-		
-		apresentacoes.inicio();
+		Apresentacoes.inicio();
 		
 		estoque.mostraEstoque();
 		
@@ -52,16 +47,15 @@ public class Menu {
 			
 		}
 		
-		scanner.close();
 	}
 	
 	public boolean perguntaContinuarCompra() {
+		
 		System.out.print("\nDeseja continuar comprando? ");
 		
 		Scanner scanner = new Scanner(System.in);
-		char resposta = scanner.nextLine().toLowerCase().charAt(0);
 		
-		scanner.close();
+		char resposta = scanner.nextLine().toLowerCase().charAt(0);
 		
 		if (resposta == 's') {
 			return true;

@@ -26,10 +26,11 @@ public class Main {
 
 					menu.escolheItem();
 
-					fechamento.mostraCarrinho();
+					//fechamento.mostraCarrinho();
 
 				} while (menu.perguntaContinuarCompra());
 
+				
 				if (estoque.carrinhoVazio()) {
 					apresentacoes.fim();
 					comprar = false;
