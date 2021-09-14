@@ -3,11 +3,16 @@ import java.util.Scanner;
 
 public class Menu {
 	
+	private Estoque estoque;
+	
+	public Menu(Estoque estoque) {
+		this.estoque = estoque;
+	}
 	
 	//Estoque estoque = new Estoque();
 	Apresentacoes apresentacoes = new Apresentacoes();
 	
-	public void mostraMenu(Estoque estoque) {
+	public void mostraMenu() {
 		
 		System.out.println("ok");
 		
@@ -17,7 +22,7 @@ public class Menu {
 		
 	}
 	
-	public void escolheItem(Estoque estoque) {
+	public void escolheItem() {
 		System.out.print("Digite o codigo do produto desejado: ");
 		
 		Scanner scanner = new Scanner(System.in);
@@ -46,6 +51,8 @@ public class Menu {
 			System.out.println("Produto indisponivel no estoque.\n");
 			
 		}
+		
+		scanner.close();
 	}
 	
 	public boolean perguntaContinuarCompra() {
@@ -53,6 +60,8 @@ public class Menu {
 		
 		Scanner scanner = new Scanner(System.in);
 		char resposta = scanner.nextLine().toLowerCase().charAt(0);
+		
+		scanner.close();
 		
 		if (resposta == 's') {
 			return true;

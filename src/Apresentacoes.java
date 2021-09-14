@@ -35,8 +35,7 @@ public class Apresentacoes {
 		System.out.print("	 /@@@@@@@@@@@@@@@@@@@@@@@@@@@               |||   &@@@@@@@@@@@@@@@@@@  \n\n");    
 		
 	}
-	
-	//metodo		
+		
 	public boolean pergunta() {
 		
 		System.out.print("\nDeseja comprar algo? S/N ");

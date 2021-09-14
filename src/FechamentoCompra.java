@@ -1,7 +1,9 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class FechamentoCompraDeivit {
+public class FechamentoCompra {
+	
+	private Estoque estoque;
 
 	private double taxa = 0;
 	private double juros = 0;
@@ -12,15 +14,16 @@ public class FechamentoCompraDeivit {
 	private String nomeUsuario = "Roberto";
 	private String cpfUsuario = "xxx.xxx.xxx-xx";
 
-	public FechamentoCompraDeivit() {
+	public FechamentoCompra(Estoque estoque) {
+		this.estoque = estoque;
 	}
 
-	public void mostraCarrinho(Estoque estoque) {
+	public void mostraCarrinho() {
 		estoque.mostraCarrinho();
 	}
 
-	public int tipoDePagamento(double valorTotal) {
-		this.valorTotal = valorTotal;
+	public int tipoDePagamento() {
+		this.valorTotal = estoque.ValorTotal();
 		
 		System.out.println("Escolha uma opção de pagamento:\n");
 		System.out.println("1 - À vista - Promoção de 10% de Desconto!");
@@ -41,6 +44,9 @@ public class FechamentoCompraDeivit {
 				Scanner scanner = new Scanner(System.in);
 				
 				tipoPagamento = scanner.nextInt();
+				
+				scanner.close();
+				
 			} catch (InputMismatchException e) {
 				tipoPagamento = 0;
 			}
@@ -91,7 +97,7 @@ public class FechamentoCompraDeivit {
 		}
 	}
 	
-	public void imprimeNota(Estoque estoque) {
+	public void imprimeNota() {
         
         System.out.print("\n\t\t\t    N O T A    F I S C A L\n");
         estoque.linha();
@@ -119,6 +125,7 @@ public class FechamentoCompraDeivit {
 		nomeUsuario = scanner.nextLine();
 		System.out.print("Insira o seu CPF: ");
 		cpfUsuario = scanner.nextLine();
+		
+		scanner.close();
 	}
-
 }
