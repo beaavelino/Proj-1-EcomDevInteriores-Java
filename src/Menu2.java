@@ -1,5 +1,6 @@
-package entities;
+
 import java.util.Scanner;
+
 public class Menu2 {
 	private String nome, codigo;
 	private double preco;
@@ -43,23 +44,23 @@ public class Menu2 {
 		Menu2.opcaoCompra = opcaoCompra;
 	}
 	
-	public void boasVindas() {
+	/*public void boasVindas() {
 		System.out.print("Bem vindo a Devs de int[e]=riores!\n");
 		System.out.print("\nProgramando o seu conforto!\n"); 
 		Scanner ler = new Scanner(System.in);
 		System.out.print("\nGostaria de iniciar as compras? Digite S/N: ");
 		Menu2.opcaoCompra = ler.next().toUpperCase().charAt(0);	
-	}
+	}*/
 	public void recebeCodigo() {
 		Scanner ler = new Scanner(System.in);
 		do {
-		 System.out.print("\nDigite o código do produto que deseja comprar G-: ");
+		 System.out.print("\nDigite o codigo do produto que deseja comprar G-: ");
 		Menu2.codigoDigitado = ler.nextInt();
 		if(Menu2.codigoDigitado >=1 && Menu2.codigoDigitado <=10) {
 			System.out.println("AQUI ELE MOSTRARIA O ITEM");
 		}
 		else {
-			System.out.println("Código inválido");
+			System.out.println("Codigo invalido");
 		}}
 		while(Menu2.codigoDigitado <1 && Menu2.codigoDigitado >10);
 	}
@@ -67,11 +68,11 @@ public class Menu2 {
 	
 	 if (opcaoCompra == 'N')
 		{
-			System.out.print("\nObrigado, até breve!\n");
+			System.out.print("\nObrigado, ate breve!\n");
 		}
 		else if (opcaoCompra != 'S' || opcaoCompra != 'N')
 		{
-			System.out.print("\nOpção invalida!\n");
+			System.out.print("\nOpcao invalida!\n");
 		}
 	}
 }

@@ -1,6 +1,3 @@
-package app;
-
-import entities.Menu2;
 
 public class TesteIvan{
 
@@ -11,11 +8,11 @@ public class TesteIvan{
         Menu2 AM = new Menu2("G5-3","Abajur", 109.99);
         Menu2 Est = new Menu2("G5-4","Estante", 380.99);
         Menu2 Esc = new Menu2("G5-5","Escrivaninha", 539.99);
-        Menu2 CdE = new Menu2("G5-6","Cadeira de escritório", 649.99);
+        Menu2 CdE = new Menu2("G5-6","Cadeira de escritï¿½rio", 649.99);
         Menu2 CBox = new Menu2("G5-7","Cama Box", 850.99);
         Menu2 CGamer = new Menu2("G5-8","Cadeira Gamer", 999.99);
         Menu2 MCentro = new Menu2("G5-9","Mesa de centro", 220.99);
-        Menu2 Sofa = new Menu2("G5-10","Sofá", 950.99);
+        Menu2 Sofa = new Menu2("G5-10","Sofï¿½", 950.99);
     	
         
         menu.boasVindas();

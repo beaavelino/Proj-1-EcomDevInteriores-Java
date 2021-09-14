@@ -21,11 +21,11 @@ public class Estoque {
 		produtos.add(new Produto("G5-3", "Abajur", 109.99));
 		produtos.add(new Produto("G5-4", "Estante", 380.99));
 		produtos.add(new Produto("G5-5", "Escrivaninha", 539.99));
-		produtos.add(new Produto("G5-6", "Cadeira de escritório", 649.99));
+		produtos.add(new Produto("G5-6", "Cadeira de escritorio", 649.99));
 		produtos.add(new Produto("G5-7", "Cama Box", 850.99));
 		produtos.add(new Produto("G5-8", "Cadeira Gamer", 999.99));
 		produtos.add(new Produto("G5-9", "Mesa de centro", 220.99));
-		produtos.add(new Produto("G5-10", "Sofá", 950.99));
+		produtos.add(new Produto("G5-10", "Sofa", 950.99));
 	}
 
 	public void mostraEstoque() {
@@ -72,7 +72,7 @@ public class Estoque {
 		Produto.espacoNome("Codigo", 18);
 		System.out.print("Produto");
 		Produto.espacoNome("Produto", 30);
-		System.out.print("         " + "Preço" + "           " + "Estoque\n");
+		System.out.print("         " + "Preco" + "           " + "Estoque\n");
 		linha();
 	}
 
@@ -106,9 +106,9 @@ public class Estoque {
  * Menu Pol = new Menu("G5-2","Poltrona", 799.99); Menu AM = new
  * Menu("G5-3","Abajur", 109.99); Menu Est = new Menu("G5-4","Estante",
  * 380.99)); Menu Esc = new Menu("G5-5","Escrivaninha", 539.99)); Menu CdE = new
- * Menu("G5-6","Cadeira de escritório", 649.99)); Menu CBox = new
+ * Menu("G5-6","Cadeira de escritï¿½rio", 649.99)); Menu CBox = new
  * Menu("G5-7","Cama Box", 850.99)); Menu CGamer = new
  * Menu("G5-8","Cadeira Gamer", 999.99)); Menu MCentro = new
- * Menu("G5-9","Mesa de centro", 220.99)); Menu Sofa = new Menu("G5-10","Sofá",
+ * Menu("G5-9","Mesa de centro", 220.99)); Menu Sofa = new Menu("G5-10","Sofï¿½",
  * 950.99));
  */
