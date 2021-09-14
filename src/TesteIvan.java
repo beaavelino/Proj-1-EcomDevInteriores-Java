@@ -15,7 +15,7 @@ public class TesteIvan{
         Menu2 Sofa = new Menu2("G5-10","Sof�", 950.99);
     	
         
-        menu.boasVindas();
+        //menu.boasVindas();
         menu.setOpcaoCompra(Menu2.getOpcaoCompra());
         
         if(Menu2.getOpcaoCompra()=='S') {
