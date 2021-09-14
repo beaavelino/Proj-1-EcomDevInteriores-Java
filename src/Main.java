@@ -13,7 +13,7 @@ public class Main {
 
 		while (comprar) {
 
-			apresentacoes.inicio();
+			Apresentacoes.inicio();
 			apresentacoes.desenho();
 
 			if (apresentacoes.pergunta()) {

@@ -45,8 +45,6 @@ public class FechamentoCompra {
 				
 				tipoPagamento = scanner.nextInt();
 				
-				scanner.close();
-				
 			} catch (InputMismatchException e) {
 				tipoPagamento = 0;
 			}
