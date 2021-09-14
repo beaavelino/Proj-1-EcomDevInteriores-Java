@@ -109,4 +109,12 @@ public class Estoque {
 		
 		return valorTotal;
 	}
+	
+    public void resetaCarrinho() {
+        for (Produto produto : produtos) {
+            produto.zeraCarrinho();
+
+        }
+    }
+	
 }

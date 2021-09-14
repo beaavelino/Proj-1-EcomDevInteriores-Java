@@ -83,5 +83,9 @@ public class Produto {
 			System.out.print(" ");
 		}
 	}
+	
+    public void zeraCarrinho() {
+        this.carrinho=0;
+    }
 
 }

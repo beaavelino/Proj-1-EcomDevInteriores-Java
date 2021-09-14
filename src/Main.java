@@ -26,7 +26,7 @@ public class Main {
 
 					menu.escolheItem();
 
-					//fechamento.mostraCarrinho();
+					fechamento.mostraCarrinho();
 
 				} while (menu.perguntaContinuarCompra());
 
@@ -46,7 +46,8 @@ public class Main {
 
 					comprar = menu.perguntaContinuarCompra();
 					apresentacoes.fim();
-
+					
+					estoque.resetaCarrinho();
 				}
 
 			} else {
