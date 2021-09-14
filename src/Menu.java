@@ -8,6 +8,7 @@ public class Menu {
 	
 	public void mostraMenu() {
 		
+		System.out.println("ok");
 		
 		cabecalho();
 		

@@ -60,7 +60,7 @@ public class Apresentacoes {
 				System.out.print("\nDigite um novo caracter: ");
 			}
 			
-		} while (respostaUsuario != 's' || respostaUsuario != 'n');
+		} while (respostaUsuario != 's' && respostaUsuario != 'n');
 		
 		return respostaBoolean;
 	}		
