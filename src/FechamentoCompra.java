@@ -25,12 +25,12 @@ public class FechamentoCompra {
 	public int tipoDePagamento() {
 		this.valorTotal = estoque.ValorTotal();
 		
-		System.out.println("Escolha uma opção de pagamento:\n");
-		System.out.println("1 - À vista - Promoção de 10% de Desconto!");
+		System.out.println("Escolha uma opcao de pagamento:\n");
+		System.out.println("1 - A vista - Promocao de 10% de Desconto!");
 		System.out.printf("    Sai por: R$ %.2f", valorTotal * 0.9);
-		System.out.println("\n\n2 - No cartão - Acréscimo de 10% de Taxa!");
+		System.out.println("\n\n2 - No cartao - Acréscimo de 10% de Taxa!");
 		System.out.printf("    Sai por: R$ %.2f", valorTotal * 1.1);
-		System.out.println("\n\n3 - Em 2x - Acréscimo de 15% de Juros e Taxa!");
+		System.out.println("\n\n3 - Em 2x - Acrescimo de 15% de Juros e Taxa!");
 		System.out.printf("    Sai por 2x de: R$ %.2f", valorTotal * 0.575);
 		System.out.printf(" Total: R$ %.2f", valorTotal * 1.15);
 

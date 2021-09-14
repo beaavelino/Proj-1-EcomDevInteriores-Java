@@ -52,11 +52,11 @@ public class Apresentacoes {
 				respostaBoolean = true;
 			}		
 			else if (respostaUsuario == 'n' || respostaUsuario == 'N') {
-				System.out.print("\nAté logo!\n");
+				System.out.print("\nAte logo!\n");
 				respostaBoolean = false;
 			}
 			else {
-				System.out.println("Caracter inválido!! ");
+				System.out.println("Caracter invalido!! ");
 				System.out.print("\nDigite um novo caracter: ");
 			}
 			
